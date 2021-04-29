@@ -32,19 +32,15 @@ public class Radio {
     public int getMaxChanel() {
         return maxChanel;
     }
-
     public void setMaxChanel(int maxChanel) {
         this.maxChanel = maxChanel;
     }
-
     public int getMinChanel() {
         return minChanel;
     }
-
     public void setMinChanel(int minChanel) {
         this.minChanel = minChanel;
     }
-
     //Переключение вверх
     public void switchArrowsUp() {
         if (currentChanel == maxChanel) {
@@ -53,7 +49,6 @@ public class Radio {
         }
         this.currentChanel ++;
     }
-
     //Переключение вниз
     public void switchArrowsDown() {
         if (currentChanel == minChanel){
@@ -62,27 +57,21 @@ public class Radio {
         }
         this.currentChanel --;
     }
-
     public int getMinVolume() {
         return minVolume;
     }
-
     public void setMinVolume(int minVolume) {
         this.minVolume = minVolume;
     }
-
     public int getMaxVolume() {
         return maxVolume;
     }
-
     public void setMaxVolume(int maxVolume) {
         this.maxVolume = maxVolume;
     }
-
     public int getCurrentVolume() {
         return currentVolume;
     }
-
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume > maxVolume) {
             return;
@@ -92,7 +81,6 @@ public class Radio {
         }
         this.currentVolume = currentVolume;
     }
-
     //Увеличить громкость
     public void volumeUp() {
         if (currentVolume == maxVolume){
@@ -100,7 +88,6 @@ public class Radio {
         }
         this.currentVolume ++;
     }
-
     //Уменьшить громкость
     public void volumeDown() {
         if (currentVolume == minVolume){
