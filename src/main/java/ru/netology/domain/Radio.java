@@ -41,6 +41,7 @@ public class Radio {
     public void setMinChanel(int minChanel) {
         this.minChanel = minChanel;
     }
+
     //Переключение вверх
     public void switchArrowsUp() {
         if (currentChanel == maxChanel) {
@@ -49,6 +50,7 @@ public class Radio {
         }
         this.currentChanel ++;
     }
+
     //Переключение вниз
     public void switchArrowsDown() {
         if (currentChanel == minChanel){
@@ -81,6 +83,7 @@ public class Radio {
         }
         this.currentVolume = currentVolume;
     }
+
     //Увеличить громкость
     public void volumeUp() {
         if (currentVolume == maxVolume){
@@ -88,6 +91,7 @@ public class Radio {
         }
         this.currentVolume ++;
     }
+
     //Уменьшить громкость
     public void volumeDown() {
         if (currentVolume == minVolume){
